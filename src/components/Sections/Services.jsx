@@ -5,10 +5,11 @@ import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import AddImage1 from "../../assets/img/add/portfolio-1.jpeg";
+import AddImage2 from "../../assets/img/contact-1.webp";
+import AddImage3 from "../../assets/img/contact-2.webp";
+import AddImage4 from "../../assets/img/add/portfolio-2.jpeg";
+
 
 export default function Services() {
   return (
@@ -21,37 +22,40 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+            <h1 className="font40 extraBold">Doctype, тому що...</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            розробляємо інтернет магазин до 60 днів, landing page до 10 днів, налаштвання реклами 3 дні.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              <b>Хоча студія ще юна, проте за гарантуємо все, що вказано на сайті.</b>
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                title="Виняткововість"
+                subtitle="Ми розробляємо не просто вем-сайт або програму, а індивудуально систему під Ваш бізнес та побажання."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Швидкість"
+                subtitle="Інтернет магазиг до 60 днів. Landing Page до 10 днів. Реклама 3 дні. Програми для Пк від 50 днів."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                title="Якість"
+                subtitle="Чітко формуємо цілі, технічні завдання та нюанси, тому що 8/10 проєктів здаємо з першої демонстрації"
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox 
+                icon="printer" 
+                title="Розумна ціна" 
+                subtitle="Ціна - це: якість = швидкост = унікальность = професіалізнму. Ми так і працюємо." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -59,11 +63,10 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">Ось що ми балакаємо про себе</h4>
+                <h2 className="font40 extraBold">Про студію Doctype</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Ми всього лиш декіька хлопція котрі відкрили свою студію та створють інстурумент для маштабування | піднімаютья рейтинги | займаються онлайн відкриттям Вашого бізнесу, налаштовуємо його та домомагаємо в просуванні. Нічого більшого, нічого зайвого.
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
