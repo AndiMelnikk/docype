@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import ContactImg1 from "../../assets/img/contact-1.png";
-import ContactImg2 from "../../assets/img/contact-2.png";
-import ContactImg3 from "../../assets/img/contact-3.png";
+import ContactImg1 from "../../assets/img/contact-1.webp";
+import ContactImg2 from "../../assets/img/contact-2.webp";
+import ContactImg3 from "../../assets/img/contact-3.webp";
 
 export default function Contact() {
   return (
@@ -11,22 +11,21 @@ export default function Contact() {
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Let's get in touch</h1>
+            <h1 className="font40 extraBold">Давайте зв'яжемось</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Якщо винакають питання або вирішили працювати зв'язуйтесь з нами. Можна надіслати лист на пошту, зателефонувати,
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              написати в онлайн чат або поспілкуємось в соц.мережах .
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <label className="font13">First name:</label>
+                <label className="font13">Ім'я</label>
                 <input type="text" id="fname" name="fname" className="font20 extraBold" />
-                <label className="font13">Email:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
-                <label className="font13">Subject:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
+                <label className="font13">Телефон:</label>
+                <input type="tel" id="tel" name="tel" className="font20 extraBold" />
+                <label className="font13">Побажання:</label>
                 <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
               </Form>
               <SumbitWrapper className="flex">
@@ -36,15 +35,15 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
                 <ContactImgBox>
-                  <img src={ContactImg1} alt="office" className="radius6" />
+                  <img src={ContactImg1} width="220px" alt="office" className="radius6" />
                 </ContactImgBox>
                 <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
+                  <img src={ContactImg2} width="180px" alt="office" className="radius6" />
                 </ContactImgBox>
               </div>
               <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" className="radius6" />
+                  <img src={ContactImg3} width="230px" alt="office" className="radius6" />
                 </div>
               </div>
             </div>
