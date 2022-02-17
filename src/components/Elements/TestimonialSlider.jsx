@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 // Components
 import TestimonialBox from "../Elements/TestimonialBox";
+import Animates from "../Elements/Animates/Animates";
 
 export default function TestimonialSlider() {
   const settings = {
@@ -32,22 +33,28 @@ export default function TestimonialSlider() {
     <div>
       <Slider {...settings}>
         <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Хлопці роблять таке, що важко уявити. Розробили систему '1C' для мого шиномонтажа. Тепер всі операції по бізнесу у мене електроно."
-            author="Володими Мельник"
-          />
+          <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+            <TestimonialBox
+              text="Хлопці роблять таке, що важко уявити. Розробили систему '1C' для мого шиномонтажа. Тепер всі операції по бізнесу у мене електроно."
+              author="Володими Мельник"
+            />
+          </Animates>
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Доробляють мені уже 2-ий сайт. Подобається що відносяться до мене як до партнера, і ми ніби допомагаємо один одному. Дякую за класну роботу."
-            author="Іванка Дорош"
-          />
+          <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.5">
+            <TestimonialBox
+              text="Доробляють мені уже 2-ий сайт. Подобається що відносяться до мене як до партнера, і ми ніби допомагаємо один одному. Дякую за класну роботу."
+              author="Іванка Дорош"
+            />
+          </Animates>
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Зробили телеграм бота, який розбровідає про мої успіхи, чим займаюсь та ставить запитання для майбутніх покупці, а відповіді зберігає в Excel таблиці.."
-            author="Ірина Запотична"
-          />
+          <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.8">
+            <TestimonialBox
+              text="Зробили телеграм бота, який розбровідає про мої успіхи, чим займаюсь та ставить запитання для майбутніх покупці, а відповіді зберігає в Excel таблиці.."
+              author="Ірина Запотична"
+            />
+          </Animates>
         </LogoWrapper>
       </Slider>
     </div>

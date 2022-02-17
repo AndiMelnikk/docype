@@ -3,6 +3,7 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
+import Animates from "../Elements/Animates/Animates";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
 import ProjectImg2 from "../../assets/img/projects/2.png";
@@ -15,37 +16,45 @@ export default function Projects() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Прєкти в розробці</h1>
-            <p className="font13">
-              Ось які проєкти зараз знаходяться в наших руках.
-              <br />
-              Переоцінити важкість проєктів та нашу роботу - задача не легка.
-            </p>
+            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+              <h2 className="font40 extraBold">Прєкти в розробці</h2>
+              <p className="font13">
+                Ось які проєкти зараз знаходяться в наших руках.
+                <br />
+                Переоцінити важкість проєктів та нашу роботу - задача не легка.
+              </p>
+            </Animates>
           </HeaderInfo>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg1}
-                title="Shiba"
-                text="Крипто гра. Вигравай криптовалюту граючи в легкі ігри."
-                action={() => alert("clicked")}
-              />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+                <ProjectBox
+                  img={ProjectImg1}
+                  title="Shiba"
+                  text="Крипто гра. Вигравай криптовалюту граючи в легкі ігри."
+                  action={() => alert("clicked")}
+                />
+              </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg2}
-                title="Інтернет магазин"
-                text="Уже займаємось прєктами які принесуть дохідн уже цього сезону."
-                action={() => alert("clicked")}
-              />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.8">
+                <ProjectBox
+                  img={ProjectImg2}
+                  title="Інтернет магазин"
+                  text="Уже займаємось прєктами які принесуть дохідн уже цього сезону."
+                  action={() => alert("clicked")}
+                />
+              </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg3}
-                title="Ivanna's Blog"
-                text="Інформаційна сторінка про майстриню та її роботу."
-                action={() => alert("clicked")}
-              />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.5">
+                <ProjectBox
+                  img={ProjectImg3}
+                  title="Ivanna's Blog"
+                  text="Інформаційна сторінка про майстриню та її роботу."
+                  action={() => alert("clicked")}
+                />
+              </Animates>
             </div>
           </div>
           <div className="row flexCenter">
@@ -60,17 +69,21 @@ export default function Projects() {
           <Advertising className="flexSpaceCenter">
             <AddLeft>
               <AddLeftInner>
-                <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" />
-                </ImgWrapper>
+                <Animates animate="animate__fadeInLeft" time="animate__slow" showInterest="0.2">
+                  <ImgWrapper className="flexCenter">
+                    <img className="radius8" src={AddImage2} alt="add" />
+                  </ImgWrapper>
+                </Animates>
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <h4 className="font15 semiBold">Онлайн відповіді на шаблонні запитання</h4>
-              <h2 className="font40 extraBold">Що я знаю про чат бота ?</h2>
-              <p className="font12">
-              Чат бот - це інструмент який спілкується з клієнатами в соц. мережах. Зазвичай такі боти використвують для шаблоних питянь клієнтів, надсилання новин, акцій для людей які спілкувались з вами або збору інформаціх про людину.
-              </p>
+              <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+                <h4 className="font15 semiBold">Онлайн відповіді на шаблонні запитання</h4>
+                <h2 className="font40 extraBold">Що я знаю про чат бота ?</h2>
+                <p className="font12">
+                Чат бот - це інструмент який спілкується з клієнатами в соц. мережах. Зазвичай такі боти використвують для шаблоних питянь клієнтів, надсилання новин, акцій для людей які спілкувались з вами або збору інформаціх про людину.
+                </p>
+              </Animates>
               <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                 <div style={{ width: "190px" }}>
                   <FullButton title="Get Started" action={() => alert("clicked")} />

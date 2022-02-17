@@ -1,15 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import Animates from "../Elements/Animates/Animates";
+
 
 export default function FullButton({ title, action, border }) {
   return (
-    <Wrapper
-      className="animate pointer radius8"
-      onClick={action ? () => action() : null}
-      border={border}
-    >
-      {title}
-    </Wrapper>
+    <Animates animate="animate__bounceIn" time="animate__slower" showInterest="1">
+      <Wrapper
+        className="animate pointer radius8"
+        onClick={action ? () => action() : null}
+        border={border}
+      >
+          {title}
+      </Wrapper>
+    </Animates>
   );
 }
 

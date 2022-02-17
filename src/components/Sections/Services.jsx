@@ -4,6 +4,7 @@ import styled from "styled-components";
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
+import Animates from "../Elements/Animates/Animates";
 // Assets
 import AddImage1 from "../../assets/img/add/portfolio-1.jpeg";
 import AddImage2 from "../../assets/img/contact-1.webp";
@@ -15,47 +16,59 @@ export default function Services() {
   return (
     <Wrapper id="services">
       <div className="lightBg" style={{ padding: "50px 0" }}>
-        <div className="container">
-          <ClientSlider />
-        </div>
+        <Animates animate="animate__fadeInUpBig" time="animate__slow" showInterest="0.3">
+          <div className="container">
+            <ClientSlider />
+          </div>
+        </Animates>
       </div>
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Doctype, тому що...</h1>
-            <p className="font13">
-            розробляємо інтернет магазин до 60 днів, landing page до 10 днів, налаштвання реклами 3 дні.
-              <br />
-              <b>Хоча студія ще юна, проте за гарантуємо все, що вказано на сайті.</b>
-            </p>
+            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+              <h2 className="font40 extraBold">Doctype, тому що...</h2>
+              <p className="font13">
+              розробляємо інтернет магазин до 60 днів, landing page до 10 днів, налаштвання реклами 3 дні.
+                <br />
+                <b>Хоча студія ще юна, проте за гарантуємо все, що вказано на сайті.</b>
+              </p>
+              </Animates>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
-              <ServiceBox
-                icon="roller"
-                title="Виняткововість"
-                subtitle="Ми розробляємо не просто вем-сайт або програму, а індивудуально систему під Ваш бізнес та побажання."
-              />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+                <ServiceBox
+                  icon="roller"
+                  title="Виняткововість"
+                  subtitle="Ми розробляємо не просто вем-сайт або програму, а індивудуально систему під Ваш бізнес та побажання."
+                />
+              </Animates>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox
-                icon="monitor"
-                title="Швидкість"
-                subtitle="Інтернет магазиг до 60 днів. Landing Page до 10 днів. Реклама 3 дні. Програми для Пк від 50 днів."
-              />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.6">
+                <ServiceBox
+                  icon="monitor"
+                  title="Швидкість"
+                  subtitle="Інтернет магазиг до 60 днів. Landing Page до 10 днів. Реклама 3 дні. Програми для Пк від 50 днів."
+                />
+              </Animates>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox
-                icon="browser"
-                title="Якість"
-                subtitle="Чітко формуємо цілі, технічні завдання та нюанси, тому що 8/10 проєктів здаємо з першої демонстрації"
-              />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.8">
+                <ServiceBox
+                  icon="browser"
+                  title="Якість"
+                  subtitle="Чітко формуємо цілі, технічні завдання та нюанси, тому що 8/10 проєктів здаємо з першої демонстрації"
+                />
+              </Animates>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox 
-                icon="printer" 
-                title="Розумна ціна" 
-                subtitle="Ціна - це: якість = швидкост = унікальность = професіалізнму. Ми так і працюємо." />
+              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+                <ServiceBox 
+                  icon="printer" 
+                  title="Розумна ціна" 
+                  subtitle="Ціна - це: якість = швидкост = унікальность = професіалізнму. Ми так і працюємо." />
+              </Animates>
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -63,11 +76,13 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">Ось що ми балакаємо про себе</h4>
-                <h2 className="font40 extraBold">Про студію Doctype</h2>
-                <p className="font12">
-                Ми всього лиш декіька хлопція котрі відкрили свою студію та створють інстурумент для маштабування | піднімаютья рейтинги | займаються онлайн відкриттям Вашого бізнесу, налаштовуємо його та домомагаємо в просуванні. Нічого більшого, нічого зайвого.
-                </p>
+                <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+                  <h4 className="font15 semiBold">Ось що ми балакаємо про себе</h4>
+                  <h2 className="font40 extraBold">Про студію Doctype</h2>
+                  <p className="font12">
+                  Ми всього лиш декіька хлопція котрі відкрили свою студію та створють інстурумент для маштабування | піднімаютья рейтинги | займаються онлайн відкриттям Вашого бізнесу, налаштовуємо його та домомагаємо в просуванні. Нічого більшого, нічого зайвого.
+                  </p>
+                </Animates>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
                     <FullButton title="Get Started" action={() => alert("clicked")} />
@@ -81,18 +96,26 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+                        <img src={AddImage1} alt="office" />
+                      </Animates>
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <Animates animate="animate__fadeInRightBig" time="animate__slow" showInterest="1">
+                        <img src={AddImage2} alt="office" />
+                      </Animates>
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <Animates animate="animate__fadeInRightBig" time="animate__slow" showInterest="1">
+                          <img src={AddImage3} alt="office" />
+                        </Animates>
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <img src={AddImage4} alt="office" />
+                      <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+                        <img src={AddImage4} alt="office" />
+                      </Animates>
                     </AddImgWrapp4>
                   </div>
                 </AddRightInner>
