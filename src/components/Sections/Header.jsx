@@ -9,25 +9,25 @@ import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 
 
-export default function Header() {
+export default function Header(props) {
   return (
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
-        <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.3">
+        <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.3">
         <div>
           <h1 className="extraBold font60">Професійна розробка не тільки сайтів.</h1>
           <HeaderP className="font13 semiBold">
           Інтернет Магазини, Landing Page, Корпоративні, Seo, Додатки на ПК, App Iphone/Android, Реклама.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Консультація" action={()=>{props.showModal()}} />
           </BtnWrapper>
         </div>
         </Animates>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-        <Animates animate="animate__fadeInDown" time="animate__slow" showInterest="0.3">
+        <Animates animate="animate__fadeInDown" time="animate__fast" showInterest="0.3">
           <Img className="radius8" src={HeaderImage} width="438px"  alt="office" style={{zIndex: 9}} />
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
@@ -114,7 +114,7 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   position: relative;
-  z-index: 9;
+  z-index: 4;
   @media (max-width: 960px) {
     width: 100%;
     justify-content: center;
@@ -132,7 +132,7 @@ const QuoteWrapper = styled.div`
   bottom: 50px;
   max-width: 330px;
   padding: 30px;
-  z-index: 99;
+  z-index: 3;
   @media (max-width: 960px) {
     left: 20px;
   }

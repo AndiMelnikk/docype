@@ -10,7 +10,7 @@ export default function Pricing() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+            <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
               <h2 className="font40 extraBold">Перегляньте наші ціни</h2>
               <p className="font13">
               Веб сайти, SEO, Реклама, Додатики на ПК, Android та iPhone - ми займаємось усім цим.
@@ -21,7 +21,7 @@ export default function Pricing() {
           </HeaderInfo>
           <TablesWrapper className="flexSpaceNull">
             <TableBox>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <PricingTable
                   icon="roller"
                   price="$150"
@@ -39,7 +39,7 @@ export default function Pricing() {
               </Animates>
             </TableBox>
             <TableBox>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <PricingTable
                   icon="monitor"
                   price="$450"
@@ -57,7 +57,7 @@ export default function Pricing() {
               </Animates>
             </TableBox>
             <TableBox>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.6">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <PricingTable
                   icon="browser"
                   price="$250"
@@ -77,7 +77,7 @@ export default function Pricing() {
           </TablesWrapper>
           <TablesWrapper className="flexSpaceNull">
             <TableBox>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.6">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <PricingTable
                   icon="roller"
                   price="$30"
@@ -95,11 +95,11 @@ export default function Pricing() {
               </Animates>
             </TableBox>
             <TableBox>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <PricingTable
                   icon="monitor"
                   price="$50"
-                  title="МагазиЧат ботин"
+                  title="Чат ботин"
                   text="Заготовленні відповіді на часті питання, або авоматичний збір контактів про людину."
                   offers={[
                     { name: "Спілкування 24/7", cheked: true },
@@ -112,7 +112,7 @@ export default function Pricing() {
               </Animates>
             </TableBox>
             <TableBox>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <PricingTable
                   icon="browser"
                   price="$900"

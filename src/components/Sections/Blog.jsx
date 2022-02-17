@@ -12,7 +12,7 @@ export default function Blog() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+            <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
               <h2 className="font40 extraBold">Наша історія</h2>
               <p className="font13">
                 2 хлопці, які у свері IT понад 4 роки, покинули свою роботу, та займаються розробною веб сайтів,
@@ -23,7 +23,7 @@ export default function Blog() {
           </HeaderInfo>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <BlogBox
                   title="Відкриття студії !"
                   text="Саме це число можна ввжавти першим днем існування студії в цей день був куплен домен doctype.site та хостинг."
@@ -33,7 +33,7 @@ export default function Blog() {
               </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <BlogBox
                   title="Соц. сторінка"
                   text="Кожен бізнес повинен бути відомим, ми як і всі зареєстувались сторінки в соц. мережах."
@@ -43,7 +43,7 @@ export default function Blog() {
               </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.6">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <BlogBox
                   title="Перше замовлен )"
                   text="Сарафанне радіо допомогло нам знайти перші замолвення, це були телеграм боти для збору інформації."
@@ -55,7 +55,7 @@ export default function Blog() {
           </div>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.6">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <BlogBox
                   title="Реклама 1"
                   text="Спроба запустиит рекламу в соц. межераз увінчалась провалом, як пізніше нам підсказали - наші партнери не там."
@@ -65,7 +65,7 @@ export default function Blog() {
               </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <BlogBox
                   title="Реклама 2"
                   text="Контекстна реклама в Google уже приносла свіій результат через декілька днві, і ми вирішили що діла в шляпі."
@@ -75,7 +75,7 @@ export default function Blog() {
               </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <BlogBox
                   title="Майбутні плани."
                   text="Зі зростанням кількості замовлень задумуєшся до переїзду на офіс, то в бижайше майбутнє ми будемо переїжати."
@@ -86,16 +86,16 @@ export default function Blog() {
             </div>
           </div>
           <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
+            {/* <div style={{ margin: "50px 0", width: "200px" }}>
               <FullButton title="Незабаром більше" action={() => alert("clicked")} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
       <div className="lightBg" style={{padding: '50px 0'}}>
         <div className="container">
           <HeaderInfo>
-            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+            <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
               <h2 className="font40 extraBold">Що вони кажуть?</h2>
               <p className="font13">
                 Ось декілька задоволеннїх відгуків партнерів яким пощастило працювати

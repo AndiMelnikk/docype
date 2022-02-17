@@ -10,13 +10,13 @@ import ProjectImg2 from "../../assets/img/projects/2.png";
 import ProjectImg3 from "../../assets/img/projects/3.png";
 import AddImage2 from "../../assets/img/add/add.jpeg";
 
-export default function Projects() {
+export default function Projects(props) {
   return (
     <Wrapper id="projects">
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+            <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
               <h2 className="font40 extraBold">Прєкти в розробці</h2>
               <p className="font13">
                 Ось які проєкти зараз знаходяться в наших руках.
@@ -27,7 +27,7 @@ export default function Projects() {
           </HeaderInfo>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <ProjectBox
                   img={ProjectImg1}
                   title="Shiba"
@@ -37,7 +37,7 @@ export default function Projects() {
               </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.8">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.8">
                 <ProjectBox
                   img={ProjectImg2}
                   title="Інтернет магазин"
@@ -47,7 +47,7 @@ export default function Projects() {
               </Animates>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.5">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.5">
                 <ProjectBox
                   img={ProjectImg3}
                   title="Ivanna's Blog"
@@ -58,9 +58,9 @@ export default function Projects() {
             </div>
           </div>
           <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
+            {/* <div style={{ margin: "50px 0", width: "200px" }}>
               <FullButton title="Load More" action={() => alert("clicked")} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function Projects() {
           <Advertising className="flexSpaceCenter">
             <AddLeft>
               <AddLeftInner>
-                <Animates animate="animate__fadeInLeft" time="animate__slow" showInterest="0.2">
+                <Animates animate="animate__fadeInLeft" time="animate__fast" showInterest="0.2">
                   <ImgWrapper className="flexCenter">
                     <img className="radius8" src={AddImage2} alt="add" />
                   </ImgWrapper>
@@ -77,7 +77,7 @@ export default function Projects() {
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+              <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
                 <h4 className="font15 semiBold">Онлайн відповіді на шаблонні запитання</h4>
                 <h2 className="font40 extraBold">Що я знаю про чат бота ?</h2>
                 <p className="font12">
@@ -86,10 +86,11 @@ export default function Projects() {
               </Animates>
               <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                 <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
+                <FullButton title="Консультація" action={()=>{props.showModal()}} />
+                  
                 </div>
                 <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                  <FullButton title={ <a href='tel:123-456-7890'>Зателефонувати</a>} border />
                 </div>
               </ButtonsRow>
             </AddRight>

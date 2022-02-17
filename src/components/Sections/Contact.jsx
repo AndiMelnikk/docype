@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
-            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+            <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
               <h2 className="font40 extraBold">Давайте зв'яжемось</h2>
               <p className="font13">
                 Якщо винакають питання або вирішили працювати зв'язуйтесь з нами. Можна надіслати лист на пошту, зателефонувати,
@@ -26,15 +26,15 @@ export default function Contact() {
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <Animates animate="animate__fadeInUpBig" time="animate__slow" showInterest="1">
+                <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="1">
                   <label className="font13">Ім'я</label>
                   <input type="text" id="fname" name="fname" className="font20 extraBold" />
                 </Animates> 
-                <Animates animate="animate__fadeInUpBig" time="animate__slow" showInterest="1">
+                <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="1">
                   <label className="font13">Телефон:</label>
                   <input type="tel" id="tel" name="tel" className="font20 extraBold" />
                 </Animates> 
-                <Animates animate="animate__fadeInUpBig" time="animate__slow" showInterest="0.5">
+                <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="0.5">
                   <label className="font13">Побажання:</label>
                   <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
                 </Animates> 
@@ -46,12 +46,12 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
                 <ContactImgBox>
-                  <Animates animate="animate__fadeInDownBig" time="animate__slow" showInterest="1">
+                  <Animates animate="animate__fadeInDownBig" time="animate__fast" showInterest="1">
                     <img src={ContactImg1} width="220px" alt="office" className="radius6" />
                   </Animates>
                 </ContactImgBox>
                 <ContactImgBox>
-                  <Animates animate="animate__fadeInUpBig" time="animate__slow" showInterest="1">
+                  <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="1">
                     <img src={ContactImg2} width="180px" alt="office" className="radius6" />
                   </Animates>
                 </ContactImgBox>
@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
               <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}>
-                  <Animates animate="animate__fadeInRightBig" time="animate__slow" showInterest="1">
+                  <Animates animate="animate__fadeInRightBig" time="animate__fast" showInterest="1">
                     <img src={ContactImg3} width="230px" alt="office" className="radius6" />
                   </Animates>
                 </div>

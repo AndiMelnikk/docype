@@ -28,9 +28,9 @@ export default function TopNavbar() {
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
+            <h5 style={{ marginLeft: "15px" }} className="font20 extraBold">
             Doctype
-            </h1>
+            </h5>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
             <BurgerIcon />
@@ -80,7 +80,7 @@ const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9;
 `;
 const NavInner = styled.div`
   position: relative;

@@ -12,11 +12,12 @@ import AddImage3 from "../../assets/img/contact-2.webp";
 import AddImage4 from "../../assets/img/add/portfolio-2.jpeg";
 
 
-export default function Services() {
+export default function Services(props) {
+
   return (
     <Wrapper id="services">
       <div className="lightBg" style={{ padding: "50px 0" }}>
-        <Animates animate="animate__fadeInUpBig" time="animate__slow" showInterest="0.3">
+        <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="0.3">
           <div className="container">
             <ClientSlider />
           </div>
@@ -25,7 +26,7 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+            <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
               <h2 className="font40 extraBold">Doctype, тому що...</h2>
               <p className="font13">
               розробляємо інтернет магазин до 60 днів, landing page до 10 днів, налаштвання реклами 3 дні.
@@ -36,7 +37,7 @@ export default function Services() {
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <ServiceBox
                   icon="roller"
                   title="Виняткововість"
@@ -45,7 +46,7 @@ export default function Services() {
               </Animates>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.6">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <ServiceBox
                   icon="monitor"
                   title="Швидкість"
@@ -54,7 +55,7 @@ export default function Services() {
               </Animates>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.8">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.8">
                 <ServiceBox
                   icon="browser"
                   title="Якість"
@@ -63,7 +64,7 @@ export default function Services() {
               </Animates>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+              <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <ServiceBox 
                   icon="printer" 
                   title="Розумна ціна" 
@@ -76,7 +77,7 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <Animates animate="animate__flipInX" time="animate__slow" showInterest="0.3">
+                <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
                   <h4 className="font15 semiBold">Ось що ми балакаємо про себе</h4>
                   <h2 className="font40 extraBold">Про студію Doctype</h2>
                   <p className="font12">
@@ -85,10 +86,10 @@ export default function Services() {
                 </Animates>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <FullButton title="Консультація" action={()=>{props.showModal()}} />
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton title={ <a href='tel:123-456-7890'>Зателефонувати</a> }border />
                   </div>
                 </ButtonsRow>
               </AddLeft>
@@ -96,24 +97,24 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+                      <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                         <img src={AddImage1} alt="office" />
                       </Animates>
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <Animates animate="animate__fadeInRightBig" time="animate__slow" showInterest="1">
+                      <Animates animate="animate__fadeInRightBig" time="animate__fast" showInterest="1">
                         <img src={AddImage2} alt="office" />
                       </Animates>
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <Animates animate="animate__fadeInRightBig" time="animate__slow" showInterest="1">
+                      <Animates animate="animate__fadeInRightBig" time="animate__fast" showInterest="1">
                           <img src={AddImage3} alt="office" />
                         </Animates>
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.4">
+                      <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                         <img src={AddImage4} alt="office" />
                       </Animates>
                     </AddImgWrapp4>
