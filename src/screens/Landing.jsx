@@ -24,7 +24,7 @@ export default function Landing() {
       <Services showModal={()=>{setShowModal(true)}} />
       <Projects showModal={()=>{setShowModal(true)}} />
       <Blog />
-      <Pricing />
+      <Pricing showModal={()=>{setShowModal(true)}} />
       <Contact />
       <Footer />
     </>

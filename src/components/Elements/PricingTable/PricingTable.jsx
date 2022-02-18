@@ -1,38 +1,41 @@
 import React from "react";
 import styled from "styled-components";
+import styles from "./PricingTable.module.css"
 // Components
-import FullButton from "../Buttons/FullButton";
+import FullButton from "../../Buttons/FullButton";
 // Assets
-import RollerIcon from "../../assets/svg/Services/RollerIcon";
-import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
-import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
-import CheckMark from "../../assets/svg/Checkmark";
+import CheckMark from "../../../assets/svg/Checkmark";
 
 export default function PricingTable({ icon, price, title, text,  offers, action }) {
   let getIcon;
 
   switch (icon) {
-    case "roller":
-      getIcon = <RollerIcon />;
+    case "leading":
+      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} />
       break;
-    case "monitor":
-      getIcon = <MonitorIcon />;
+    case "shop":
+      getIcon = <img src={require('../../../assets/img/icon/iconShop.png').default} />
       break;
-    case "browser":
-      getIcon = <BrowserIcon />;
+    case "company":
+      getIcon = <img src={require('../../../assets/img/icon/iconCompany.png').default} />
       break;
-    case "printer":
-      getIcon = <PrinterIcon />;
+    case "ads":
+      getIcon = <img src={require('../../../assets/img/icon/iconPeople.png').default} />
+      break;
+    case "bot":
+      getIcon = <img src={require('../../../assets/img/icon/iconBot.png').default} />
+      break;
+    case "app":
+      getIcon = <img src={require('../../../assets/img/icon/iconApp.png').default} />
       break;
     default:
-      getIcon = <RollerIcon />;
+      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} />
       break;
   }
 
   return (
-    <Wrapper className="whiteBg radius8 shadow">
-      <div className="flexSpaceCenter">
+    <div className={["whiteBg radius8 shadow", styles.block ].join(' ')}>
+      <div className={["flexSpaceCenter", styles.iconImg].join(' ')}>
         {getIcon}
         <p className="font30 extraBold">{price}</p>
       </div>
@@ -59,15 +62,8 @@ export default function PricingTable({ icon, price, title, text,  offers, action
           : null}
       </div>
       <div style={{ maxWidth: "120px", margin: "30px auto 0 auto" }}>
-        <FullButton title="Buy" action={action} />
+        <FullButton title="Детальніше" action={action} />
       </div>
-    </Wrapper>
+    </div>
   );
 }
-
-const Wrapper = styled.div`
-  width: 100%;
-  text-align: left;
-  padding: 20px 30px;
-  margin-top: 30px;
-`;

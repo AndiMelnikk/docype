@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Modal.module.css"
 // Component
 import Animates from "../Animates/Animates";
@@ -9,6 +9,41 @@ import FullButton from "../../Buttons/FullButton";
 
 
 const Modal = (props) => {
+    const [titleBtn, setTitleBtn] = useState('Відправити повідомлення')
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [messages, setMessages] = useState('');
+    const axios = require('axios');
+    
+  
+    const handleSubmit = (evt) => {
+      evt.preventDefault();
+      
+      if(name !== "" && phone.length > 9 && (!isNaN(parseFloat(phone)) && isFinite(phone)))
+      axios({
+        method: 'post',
+        url: './php/toMail.php',
+        data: {
+            name:name,
+            phone: phone,
+            message: messages
+        }
+    })
+        .then(function (response) {
+          setTitleBtn('Повідомлення відправленно')
+            console.log(response)  
+        })
+  
+        .catch(function (error) {
+          setTitleBtn('Помилка, спробуйте знову')
+            console.log(error)
+        });
+  
+      else
+      setTitleBtn('Введіть коректні дані')  
+  }
+  
+
     return(
         <div className={props.show ? [styles.modalBlock, styles.active].join(' ') : styles.modalBlock}>
             <div className={styles.container}>
@@ -32,21 +67,23 @@ const Modal = (props) => {
                     </div>
                 </div>
                 <div className={styles.form}>
-                <form>
+                <form onSubmit={handleSubmit}>
                 <Animates animate="animate__fadeInUpBig" time="animate__faster" showInterest="1">
-                  <label className="font13">Ім'я</label>
-                  <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <label className="font13">Ім'я</label>
+                  <input type="text" id="fname" name="fname" className="font20 extraBold"  value={name} onChange={e => setName(e.target.value)} />
                 </Animates> 
                 <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="1">
                   <label className="font13">Телефон:</label>
-                  <input type="tel" id="tel" name="tel" className="font20 extraBold" />
+                  <input type="tel" id="tel" name="tel" className="font20 extraBold"  value={phone} onChange={e => setPhone(e.target.value)} />
                 </Animates> 
                 <Animates animate="animate__fadeInUpBig"  showInterest="1">
                   <label className="font13">Побажання:</label>
-                  <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                  <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold"  value={messages} onChange={e => setMessages(e.target.value)} />
                 </Animates> 
                 <Animates animate="animate__fadeInUpBig" time="animate__slow"  showInterest="1">
-                    <FullButton type="submit" title="Відправити повідомлення" className={styles.bottomForm} />
+                    <div className={styles.bottomForm}>
+                    <FullButton type="submit" title={titleBtn}  />
+                    </div>
                 </Animates> 
               </form>
                 </div>

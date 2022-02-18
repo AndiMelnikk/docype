@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import PricingTable from "../Elements/PricingTable";
+import PricingTable from "../Elements/PricingTable/PricingTable";
 import Animates from "../Elements/Animates/Animates";
 
-export default function Pricing() {
+export default function Pricing(props) {
   return (
     <Wrapper id="pricing">
       <div className="whiteBg">
@@ -23,7 +23,7 @@ export default function Pricing() {
             <TableBox>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <PricingTable
-                  icon="roller"
+                  icon="leading"
                   price="$150"
                   title="Landing Page"
                   text="Односторінкові сайти зазвичай викоритовують разом з рекламою в соц. мережа. Це чудова зв'яза для заявлення про себе."
@@ -34,14 +34,14 @@ export default function Pricing() {
                     { name: "Збільшення заявок", cheked: true },
                     { name: "Інтернет продажі", cheked: true },
                   ]}
-                  action={() => alert("clicked")}
+                  action={()=>{props.showModal()}}
                 />
               </Animates>
             </TableBox>
             <TableBox>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <PricingTable
-                  icon="monitor"
+                  icon="shop"
                   price="$450"
                   title="Магазин"
                   text="Продажа власних товарів, або запуск бізнесу про дропшипінгу. Все як у звичайному магазині, тільки можна праюцювати без складу."
@@ -52,14 +52,14 @@ export default function Pricing() {
                     { name: "Власний бізнес", cheked: true },
                     { name: "Збільшення продажів", cheked: true },
                   ]}
-                  action={() => alert("clicked")}
+                  action={()=>{props.showModal()}}
                 />
               </Animates>
             </TableBox>
             <TableBox>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <PricingTable
-                  icon="browser"
+                  icon="company"
                   price="$250"
                   title="Корпоративний"
                   text="Сайт, що має потужні функціональні можливості з великою кількістю розділів, детальною інформацією про компанію."
@@ -70,7 +70,7 @@ export default function Pricing() {
                     { name: "Розкрутка компанії", cheked: true },
                     { name: "Залучення аудиторії", cheked: true },
                   ]}
-                  action={() => alert("clicked")}
+                  action={()=>{props.showModal()}}
                 />
               </Animates>
             </TableBox>
@@ -79,7 +79,7 @@ export default function Pricing() {
             <TableBox>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <PricingTable
-                  icon="roller"
+                  icon="ads"
                   price="$30"
                   title="Реклама"
                   text="Обов'язковий атрибут для новго бізнесу, а також для підтримки існуючого."
@@ -90,14 +90,14 @@ export default function Pricing() {
                     { name: "Youtube", cheked: true },
                     { name: "SEO", cheked: true },
                   ]}
-                  action={() => alert("clicked")}
+                  action={()=>{props.showModal()}}
                 />
               </Animates>
             </TableBox>
             <TableBox>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <PricingTable
-                  icon="monitor"
+                  icon="bot"
                   price="$50"
                   title="Чат ботин"
                   text="Заготовленні відповіді на часті питання, або авоматичний збір контактів про людину."
@@ -107,14 +107,14 @@ export default function Pricing() {
                     { name: "Автоматизоване спілкування", cheked: true },
                     { name: "Легка розсилка нови", cheked: true },
                   ]}
-                  action={() => alert("clicked")}
+                  action={()=>{props.showModal()}}
                 />
               </Animates>
             </TableBox>
             <TableBox>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <PricingTable
-                  icon="browser"
+                  icon="app"
                   price="$900"
                   title="PC | Mobile"
                   text="Програмен забезбечення яке буде тільки у вас, або програми для багатьох користувачів."
@@ -125,7 +125,7 @@ export default function Pricing() {
                     { name: "Приватний функціонал", cheked: true },
                     { name: "Великі можлтвості", cheked: true },
                   ]}
-                  action={() => alert("clicked")}
+                  action={()=>{props.showModal()}}
                 />
               </Animates>
             </TableBox>

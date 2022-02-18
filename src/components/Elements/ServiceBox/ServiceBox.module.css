@@ -1,0 +1,27 @@
+.block{
+    width: 100%;
+}
+
+.titleStyle{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.iconStyle img{
+    height: 60px;
+}
+.subtitleStyle{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; 
+}
+
+@media (max-width: 860px) {
+    .iconStyle{
+        margin: 0 auto;
+    }
+    .titleStyle{
+        padding: 20px 0;
+    }
+  }

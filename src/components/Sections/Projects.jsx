@@ -32,7 +32,6 @@ export default function Projects(props) {
                   img={ProjectImg1}
                   title="Shiba"
                   text="Крипто гра. Вигравай криптовалюту граючи в легкі ігри."
-                  action={() => alert("clicked")}
                 />
               </Animates>
             </div>
@@ -42,7 +41,6 @@ export default function Projects(props) {
                   img={ProjectImg2}
                   title="Інтернет магазин"
                   text="Уже займаємось прєктами які принесуть дохідн уже цього сезону."
-                  action={() => alert("clicked")}
                 />
               </Animates>
             </div>
@@ -52,7 +50,6 @@ export default function Projects(props) {
                   img={ProjectImg3}
                   title="Ivanna's Blog"
                   text="Інформаційна сторінка про майстриню та її роботу."
-                  action={() => alert("clicked")}
                 />
               </Animates>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
-import ServiceBox from "../Elements/ServiceBox";
+import ServiceBox from "../Elements/ServiceBox/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 import Animates from "../Elements/Animates/Animates";
 // Assets
@@ -39,7 +39,7 @@ export default function Services(props) {
             <ServiceBoxWrapper>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <ServiceBox
-                  icon="roller"
+                  icon="cup"
                   title="Виняткововість"
                   subtitle="Ми розробляємо не просто вем-сайт або програму, а індивудуально систему під Ваш бізнес та побажання."
                 />
@@ -48,7 +48,7 @@ export default function Services(props) {
             <ServiceBoxWrapper>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.6">
                 <ServiceBox
-                  icon="monitor"
+                  icon="speed"
                   title="Швидкість"
                   subtitle="Інтернет магазиг до 60 днів. Landing Page до 10 днів. Реклама 3 дні. Програми для Пк від 50 днів."
                 />
@@ -57,7 +57,7 @@ export default function Services(props) {
             <ServiceBoxWrapper>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.8">
                 <ServiceBox
-                  icon="browser"
+                  icon="fire"
                   title="Якість"
                   subtitle="Чітко формуємо цілі, технічні завдання та нюанси, тому що 8/10 проєктів здаємо з першої демонстрації"
                 />
@@ -66,7 +66,7 @@ export default function Services(props) {
             <ServiceBoxWrapper>
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.4">
                 <ServiceBox 
-                  icon="printer" 
+                  icon="prise" 
                   title="Розумна ціна" 
                   subtitle="Ціна - це: якість = швидкост = унікальность = професіалізнму. Ми так і працюємо." />
               </Animates>
