@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import styles from "./ServiceBox.module.css"
 
 export default function ServiceBox({icon, title, subtitle}) {
@@ -7,19 +6,19 @@ export default function ServiceBox({icon, title, subtitle}) {
 
   switch (icon) {
     case "cup":
-      getIcon = <img src={require('../../../assets/img/icon/iconCup.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconCup.png').default}  alt="cup" />
       break;
     case "speed":
-      getIcon = <img src={require('../../../assets/img/icon/iconSpeed.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconSpeed.png').default} alt="speed"  />
       break;
     case "fire":
-      getIcon = <img src={require('../../../assets/img/icon/iconFire.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconFire.png').default}  alt="fire" />
       break;
     case "prise":
-      getIcon = <img src={require('../../../assets/img/icon/iconPrise.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconPrise.png').default}  alt="prise" />
       break;
     default:
-      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} alt="landing"  />
       break;
   }
 

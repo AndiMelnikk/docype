@@ -9,7 +9,7 @@ import FullButton from "../../Buttons/FullButton";
 
 
 const Modal = (props) => {
-    const [titleBtn, setTitleBtn] = useState('Відправити повідомлення')
+    const [titleBtn, setTitleBtn] = useState('Надіслати')
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [messages, setMessages] = useState('');
@@ -18,7 +18,7 @@ const Modal = (props) => {
   
     const handleSubmit = (evt) => {
       evt.preventDefault();
-      
+  
       if(name !== "" && phone.length > 9 && (!isNaN(parseFloat(phone)) && isFinite(phone)))
       axios({
         method: 'post',
@@ -30,7 +30,7 @@ const Modal = (props) => {
         }
     })
         .then(function (response) {
-          setTitleBtn('Повідомлення відправленно')
+          setTitleBtn('Відправленно')
             console.log(response)  
         })
   

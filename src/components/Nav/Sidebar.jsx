@@ -11,9 +11,9 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
           <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
+          <h2 className="whiteColor font20" style={{ marginLeft: "15px" }}>
           Doctype
-          </h1>
+          </h2>
         </div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
           <CloseIcon />
@@ -114,7 +114,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
 
 const Wrapper = styled.nav`
   width: 400px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   padding: 0 30px;

@@ -9,7 +9,7 @@ import ContactImg2 from "../../assets/img/contact-2.webp";
 import ContactImg3 from "../../assets/img/contact-3.webp";
 
 export default function Contact() {
-  const [titleBtn, setTitleBtn] = useState('Відправити повідомлення')
+  const [titleBtn, setTitleBtn] = useState('Надіслати')
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [messages, setMessages] = useState('');
@@ -18,7 +18,7 @@ export default function Contact() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    
+
     if(name !== "" && phone.length > 9 && (!isNaN(parseFloat(phone)) && isFinite(phone)))
     axios({
       method: 'post',
@@ -30,7 +30,7 @@ export default function Contact() {
       }
   })
       .then(function (response) {
-        setTitleBtn('Повідомлення відправленно')
+        setTitleBtn('Відправленно')
           console.log(response)  
       })
 

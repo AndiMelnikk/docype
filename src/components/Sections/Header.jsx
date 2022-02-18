@@ -17,7 +17,7 @@ export default function Header(props) {
         <div>
           <h1 className="extraBold font60">Професійна розробка не тільки сайтів.</h1>
           <HeaderP className="font13 semiBold">
-          Інтернет Магазини, Landing Page, Корпоративні, Seo, Додатки на ПК, App Iphone/Android, Реклама.
+          Інтернет Магазини, Landing Page, Корпоративні, Seo, Додатки на ПК, iPhone / Android, Реклама.
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Консультація" action={()=>{props.showModal()}} />

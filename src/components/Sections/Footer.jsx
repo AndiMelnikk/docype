@@ -25,9 +25,9 @@ export default function Contact() {
               © {getCurrentYear()} - <span className="purpleColor font13">2022 - Doctype</span>  Всі права захищені
             </StyleP>
 
-            <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
+            <a href="mailto: doctype.site@gmail.com" className="whiteColor animate pointer font13">
             doctype.site@gmail.com
-            </Link>
+            </a>
           </InnerWrapper>
         </div>
       </div>

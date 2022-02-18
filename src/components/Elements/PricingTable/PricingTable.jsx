@@ -1,5 +1,4 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"; 
 import styles from "./PricingTable.module.css"
 // Components
 import FullButton from "../../Buttons/FullButton";
@@ -11,25 +10,25 @@ export default function PricingTable({ icon, price, title, text,  offers, action
 
   switch (icon) {
     case "leading":
-      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} alt="landing" />
       break;
     case "shop":
-      getIcon = <img src={require('../../../assets/img/icon/iconShop.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconShop.png').default} alt="shop"  />
       break;
     case "company":
-      getIcon = <img src={require('../../../assets/img/icon/iconCompany.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconCompany.png').default} alt="company" />
       break;
     case "ads":
-      getIcon = <img src={require('../../../assets/img/icon/iconPeople.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconPeople.png').default} alt="ads" />
       break;
     case "bot":
-      getIcon = <img src={require('../../../assets/img/icon/iconBot.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconBot.png').default} alt="bot" />
       break;
     case "app":
-      getIcon = <img src={require('../../../assets/img/icon/iconApp.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconApp.png').default} alt="app"  />
       break;
     default:
-      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} />
+      getIcon = <img src={require('../../../assets/img/icon/iconLeading.png').default} alt="landingDefault"  />
       break;
   }
 
