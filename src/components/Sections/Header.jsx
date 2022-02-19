@@ -35,7 +35,7 @@ export default function Header(props) {
             </QuotesWrapper>
               <div>
                 <p className="font15 whiteColor">
-                  <em>Хлопці роблять таке, що важко уявити. Розробили систему "1C" для мого шиномонтажа...</em>
+                  <em>Хлопці роблять таке, що важко уявити. Розробили систему "1C" для мого шиномонтажу...</em>
                 </p>
                 <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>www.22duyma.com</p>
               </div>
@@ -60,6 +60,7 @@ const Wrapper = styled.section`
   min-height: 840px;
   @media (max-width: 960px) {
     flex-direction: column;
+    padding-top: 30px;
   }
 `;
 const LeftSide = styled.div`
@@ -138,7 +139,7 @@ const QuoteWrapper = styled.div`
     left: 20px;
   }
   @media (max-width: 560px) {
-    bottom: -50px;
+    bottom: 15px;
   }
 `;
 const QuotesWrapper = styled.div`

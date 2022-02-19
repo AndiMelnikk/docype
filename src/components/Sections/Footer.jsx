@@ -18,11 +18,11 @@ export default function Contact() {
             <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
               <LogoImg />
               <h1 className="font15 extraBold whiteColor" style={{ marginLeft: "15px" }}>
-              Doctype
+              !Doctype
               </h1>
             </Link>
             <StyleP className="whiteColor font13">
-              © {getCurrentYear()} - <span className="purpleColor font13">2022 - Doctype</span>  Всі права захищені
+              © {getCurrentYear()} - <span className="purpleColor font13">2022 - !Doctype</span>  Koziumych and Melnyk
             </StyleP>
 
             <a href="mailto: doctype.site@gmail.com" className="whiteColor animate pointer font13">

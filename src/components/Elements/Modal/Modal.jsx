@@ -50,7 +50,7 @@ const Modal = (props) => {
                 <div className={styles.headerModal}>
                     <div className={styles.logoBlock}>
                         <LogoIcon/>
-                        <span  className="font20 extraBold"> Doctype </span>
+                        <span  className="font20 extraBold"> !Doctype </span>
                     </div>
                     <div className={styles.closeModal} >
                         <FullButton 

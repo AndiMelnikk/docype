@@ -35,7 +35,7 @@ export default function TestimonialSlider() {
         <LogoWrapper className="flexCenter">
           <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.2">
             <TestimonialBox
-              text="Хлопці роблять таке, що важко уявити. Розробили систему '1C' для мого шиномонтажа. Тепер всі операції по бізнесу у мене електроно."
+              text="Хлопці роблять таке, що важко уявити. Розробили систему '1C' для мого шиномонтажу. Тепер всі операції по бізнесу у мене електронно."
               author="Володими Мельник"
             />
           </Animates>
@@ -43,7 +43,7 @@ export default function TestimonialSlider() {
         <LogoWrapper className="flexCenter">
           <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.5">
             <TestimonialBox
-              text="Доробляють мені уже 2-ий сайт. Подобається що відносяться до мене як до партнера, і ми ніби допомагаємо один одному. Дякую за класну роботу."
+              text="Доробляють мені уже 2-ий сайт. Подобається що відносяться до мене як до партнера, і ми, ніби, допомагаємо один одному. Дякую за класну роботу."
               author="Іванка Дорош"
             />
           </Animates>
@@ -51,8 +51,8 @@ export default function TestimonialSlider() {
         <LogoWrapper className="flexCenter">
           <Animates animate="animate__fadeInUp" time="animate__slow" showInterest="0.8">
             <TestimonialBox
-              text="Зробили телеграм бота, який розбровідає про мої успіхи, чим займаюсь та ставить запитання для майбутніх покупці, а відповіді зберігає в Excel таблиці.."
-              author="Ірина Запотична"
+              text="Зробили телеграм бота, який розповідає про мої успіхи, чим займаюсь та ставить запитання для майбутніх покупців, а відповіді зберігає в Excel таблиці."
+              author="Ірина Когіренко"
             />
           </Animates>
         </LogoWrapper>

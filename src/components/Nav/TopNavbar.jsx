@@ -29,7 +29,7 @@ export default function TopNavbar() {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
             <h5 style={{ marginLeft: "15px" }} className="font20 extraBold">
-            Doctype
+            !Doctype
             </h5>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
@@ -53,7 +53,7 @@ export default function TopNavbar() {
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
-              Doctype
+              !Doctype
               </Link>
             </li>
             <li className="semiBold font15 pointer">

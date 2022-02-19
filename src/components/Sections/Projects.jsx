@@ -17,7 +17,7 @@ export default function Projects(props) {
         <div className="container">
           <HeaderInfo>
             <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
-              <h2 className="font40 extraBold">Прєкти в розробці</h2>
+              <h2 className="font40 extraBold">Проєкти в розробці</h2>
               <p className="font13">
                 Ось які проєкти зараз знаходяться в наших руках.
                 <br />
@@ -40,7 +40,7 @@ export default function Projects(props) {
                 <ProjectBox
                   img={ProjectImg2}
                   title="Інтернет магазин"
-                  text="Уже займаємось прєктами які принесуть дохідн уже цього сезону."
+                  text="Уже займаємось проєктами які принесуть дохід уже цього сезону."
                 />
               </Animates>
             </div>
@@ -76,9 +76,9 @@ export default function Projects(props) {
             <AddRight>
               <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
                 <h4 className="font15 semiBold">Онлайн відповіді на шаблонні запитання</h4>
-                <h2 className="font40 extraBold">Що я знаю про чат бота ?</h2>
+                <h2 className="font40 extraBold">Що я знаю про чат-бота ?</h2>
                 <p className="font12">
-                Чат бот - це інструмент який спілкується з клієнатами в соц. мережах. Зазвичай такі боти використвують для шаблоних питянь клієнтів, надсилання новин, акцій для людей які спілкувались з вами або збору інформаціх про людину.
+                Чат-бот - це інструмент який спілкується з клієнтами в соц. мережах. Зазвичай такі боти використовують для шаблони питань клієнтів, надсилання новин, акцій для людей які спілкувались з вами або збору інформації про людину
                 </p>
               </Animates>
               <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>

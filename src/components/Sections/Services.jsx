@@ -16,20 +16,20 @@ export default function Services(props) {
 
   return (
     <Wrapper id="services">
-      <div className="lightBg" style={{ padding: "50px 0" }}>
+      {/* <div className="lightBg" style={{ padding: "50px 0" }}>
         <Animates animate="animate__fadeInUpBig" time="animate__fast" showInterest="0.3">
           <div className="container">
             <ClientSlider />
           </div>
         </Animates>
-      </div>
+      </div> */}
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
             <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
-              <h2 className="font40 extraBold">Doctype, тому що...</h2>
+              <h2 className="font40 extraBold">!Doctype, тому що...</h2>
               <p className="font13">
-              розробляємо інтернет магазин до 60 днів, landing page до 10 днів, налаштвання реклами 3 дні.
+              розробляємо  інтернет-магазин  до 60 днів, landing page до 10, налаштування реклами 3.
                 <br />
                 <b>Хоча студія ще юна, проте  гарантуємо все, що вказано на сайті.</b>
               </p>
@@ -40,8 +40,8 @@ export default function Services(props) {
               <Animates animate="animate__fadeInUp" time="animate__fast" showInterest="0.2">
                 <ServiceBox
                   icon="cup"
-                  title="Виняткововість"
-                  subtitle="Ми розробляємо не просто вем-сайт або програму, а індивудуально систему під Ваш бізнес та побажання."
+                  title="Винятковість"
+                  subtitle="Ми розробляємо не просто вебсайт або програму, а індивідуальну систему під Ваш бізнес і побажання."
                 />
               </Animates>
             </ServiceBoxWrapper>
@@ -50,7 +50,7 @@ export default function Services(props) {
                 <ServiceBox
                   icon="speed"
                   title="Швидкість"
-                  subtitle="Інтернет магазиг до 60 днів. Landing Page до 10 днів. Реклама 3 дні. Програми для Пк від 50 днів."
+                  subtitle="Інтернет-магазин до 60 днів. Landing Page до 10 днів. Реклама 3 дні. Програми для Пк від 50 днів."
                 />
               </Animates>
             </ServiceBoxWrapper>
@@ -59,7 +59,7 @@ export default function Services(props) {
                 <ServiceBox
                   icon="fire"
                   title="Якість"
-                  subtitle="Чітко формуємо цілі, технічні завдання та нюанси, тому що 8/10 проєктів здаємо з першої демонстрації"
+                  subtitle="Чітко формуємо цілі, технічні завдання та нюанси, тому 8/10 проєктів здаємо з першої демонстрації"
                 />
               </Animates>
             </ServiceBoxWrapper>
@@ -68,7 +68,7 @@ export default function Services(props) {
                 <ServiceBox 
                   icon="prise" 
                   title="Розумна ціна" 
-                  subtitle="Ціна - це: якість = швидкост = унікальность = професіалізнму. Ми так і працюємо." />
+                  subtitle="Ціна - це: якість + швидкість + унікальність + важкість. Так оцінюємо ми." />
               </Animates>
             </ServiceBoxWrapper>
           </ServiceBoxRow>
@@ -78,10 +78,10 @@ export default function Services(props) {
             <Advertising className="flexSpaceCenter">
               <AddLeft>
                 <Animates animate="animate__flipInX" time="animate__fast" showInterest="0.3">
-                  <h4 className="font15 semiBold">Ось що ми балакаємо про себе</h4>
-                  <h2 className="font40 extraBold">Про студію Doctype</h2>
+                  <h4 className="font15 semiBold">Ось що ми скажемо про себе</h4>
+                  <h2 className="font40 extraBold">Про студію !Doctype</h2>
                   <p className="font12">
-                  Ми всього лиш декіька хлопція котрі відкрили свою студію та створють інстурумент для маштабування | піднімаютья рейтинги | займаються онлайн відкриттям Вашого бізнесу, налаштовуємо його та домомагаємо в просуванні. Нічого більшого, нічого зайвого.
+                  Ми хлопці котрі відкрили свою студію та створюють інструмент для масштабування | піднімають рейтинги | займаються онлайн відкриттям Вашого бізнесу, налаштовуємо його та допомагаємо в просуванні. Нічого більшого, нічого зайвого.
                   </p>
                 </Animates>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
@@ -89,7 +89,7 @@ export default function Services(props) {
                     <FullButton title="Консультація" action={()=>{props.showModal()}} />
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title={ <a href='tel:123-456-7890'>Зателефонувати</a> }border />
+                    <FullButton title={ <a href='tel:123-456-7890'>Зателефонувати</a> } border />
                   </div>
                 </ButtonsRow>
               </AddLeft>
